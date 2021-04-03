@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		A57FB3E02618A3B5005887EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FB3DF2618A3B5005887EE /* AppDelegate.swift */; };
 		A57FB3E22618A3B5005887EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FB3E12618A3B5005887EE /* SceneDelegate.swift */; };
-		A57FB3E42618A3B5005887EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FB3E32618A3B5005887EE /* ViewController.swift */; };
-		A57FB3E72618A3B5005887EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57FB3E52618A3B5005887EE /* Main.storyboard */; };
 		A57FB3E92618A3B6005887EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57FB3E82618A3B6005887EE /* Assets.xcassets */; };
 		A57FB3EC2618A3B6005887EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57FB3EA2618A3B6005887EE /* LaunchScreen.storyboard */; };
+		A57FB3F72618A3EB005887EE /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FB3F62618A3EB005887EE /* RootCoordinator.swift */; };
+		A57FB3FE2618A43B005887EE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FB3FD2618A43B005887EE /* RootViewController.swift */; };
+		A57FB4022618A44A005887EE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FB4012618A44A005887EE /* BaseViewController.swift */; };
+		A57FB4062618A47B005887EE /* RootCoordinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FB4052618A47B005887EE /* RootCoordinated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A57FB3DC2618A3B5005887EE /* iOS starter project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS starter project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57FB3DF2618A3B5005887EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A57FB3E12618A3B5005887EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A57FB3E32618A3B5005887EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A57FB3E62618A3B5005887EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A57FB3E82618A3B6005887EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57FB3EB2618A3B6005887EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57FB3ED2618A3B6005887EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57FB3F62618A3EB005887EE /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		A57FB3FD2618A43B005887EE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A57FB4012618A44A005887EE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A57FB4052618A47B005887EE /* RootCoordinated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,47 @@
 			children = (
 				A57FB3DF2618A3B5005887EE /* AppDelegate.swift */,
 				A57FB3E12618A3B5005887EE /* SceneDelegate.swift */,
-				A57FB3E32618A3B5005887EE /* ViewController.swift */,
-				A57FB3E52618A3B5005887EE /* Main.storyboard */,
+				A57FB4082618A47D005887EE /* Protocols */,
+				A57FB3FA2618A41D005887EE /* ViewControllers */,
+				A57FB3F52618A3E1005887EE /* Coordinators */,
 				A57FB3E82618A3B6005887EE /* Assets.xcassets */,
 				A57FB3EA2618A3B6005887EE /* LaunchScreen.storyboard */,
 				A57FB3ED2618A3B6005887EE /* Info.plist */,
 			);
 			path = "iOS starter project";
+			sourceTree = "<group>";
+		};
+		A57FB3F52618A3E1005887EE /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A57FB3F62618A3EB005887EE /* RootCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A57FB3FA2618A41D005887EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A57FB4002618A443005887EE /* Base */,
+				A57FB3FD2618A43B005887EE /* RootViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A57FB4002618A443005887EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A57FB4012618A44A005887EE /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A57FB4082618A47D005887EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A57FB4052618A47B005887EE /* RootCoordinated.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +164,6 @@
 			files = (
 				A57FB3EC2618A3B6005887EE /* LaunchScreen.storyboard in Resources */,
 				A57FB3E92618A3B6005887EE /* Assets.xcassets in Resources */,
-				A57FB3E72618A3B5005887EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57FB3E42618A3B5005887EE /* ViewController.swift in Sources */,
+				A57FB4062618A47B005887EE /* RootCoordinated.swift in Sources */,
+				A57FB4022618A44A005887EE /* BaseViewController.swift in Sources */,
+				A57FB3F72618A3EB005887EE /* RootCoordinator.swift in Sources */,
 				A57FB3E02618A3B5005887EE /* AppDelegate.swift in Sources */,
+				A57FB3FE2618A43B005887EE /* RootViewController.swift in Sources */,
 				A57FB3E22618A3B5005887EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A57FB3E52618A3B5005887EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A57FB3E62618A3B5005887EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A57FB3EA2618A3B6005887EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
